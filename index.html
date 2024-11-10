@@ -8,9 +8,21 @@
     <a class="buttonA" href="#Aboutme"><img src="A.png"></img>About Me</a>
     <a id="Aboutme" name="Aboutme">About me</a>
     <p class="Contact" id="C"><hr class="Chr" id="Chr"></p>
+    <p id="text"></p>
+    <form>
+        <input type="range" min="1" max="100" id="myRange">a</input>
+        <input type="submit" id="submit"></input>
+    </form>
 </body>
 
 <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("text");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+    output.innerHTML = this.value;
+}
     function Contact(){
         let color ="Gray";
         
@@ -115,5 +127,12 @@ body{
     position: absolute;
     bottom: -10%;
 }
+#myRange{
+    position: absolute;
+    top: 20%;
+}
+#submit{
+    position: absolute;
+    top: 21%;
+}
 </style>
-
