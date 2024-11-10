@@ -4,7 +4,7 @@
 <body>
     <hr class="linebreak"></hr>
     <button onclick="Contact()"><img src="A.png"></img>Contact</button>
-    <p class="Contact" id="C"></p>
+    <p class="Contact" id="C"><hr class="Chr" id="Chr"></p>
 </body>
 
 <script>
@@ -13,6 +13,7 @@
         
         document.getElementById("C").style.backgroundColor = color;
         document.getElementById("C").innerHTML = "Contact Info";
+        document.getElementById("Chr").style.visibility = "visible";
 }
     
 </script>
@@ -51,5 +52,15 @@ body{
     bottom: 10%;
     right: 1%;
     color: white;
+    text-align: center;
+    font-size: 37px;
+    border-radius: 10px;
+}
+.Chr{
+    width: 19.89%;
+    visibility: hidden;
+    position: absolute;
+    bottom: 78%;
+    right: 1%;
 }
 </style>
