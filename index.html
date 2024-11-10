@@ -3,8 +3,19 @@
 </head>
 <body>
     <hr class="linebreak"></hr>
-    <button><img src="A.png"></img>Contact</button>
+    <button onclick="Contact()"><img src="A.png"></img>Contact</button>
+    <p class="Contact" id="C"></p>
 </body>
+
+<script>
+    function Contact(){
+        let color ="Gray";
+        
+        document.getElementById("C").style.backgroundColor = color;
+        document.getElementById("C").innerHTML = "Contact Info";
+}
+    
+</script>
 
 <style>
 body{
@@ -32,5 +43,13 @@ body{
     transform: translate(0.57%);
     top: 9%;
    border-radius: 5px;
+}
+.Contact{
+    height: 70%;
+    width: 20%;
+    position: absolute;
+    bottom: 10%;
+    right: 1%;
+    color: white;
 }
 </style>
