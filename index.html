@@ -2,8 +2,11 @@
     <p1 class="Title">Portfolio</p1>
 </head>
 <body>
-    <hr class="linebreak"></hr>
+    <hr class="lbreak"></hr>
+    <marquee class="m" direction="right">N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16 N16</marquee>
     <button class="button" onclick="Contact()"><img src="A.png"></img>Contact</button>
+    <a class="buttonA" href="#Aboutme"><img src="A.png"></img>About Me</a>
+    <a id="Aboutme" name="Aboutme">About me</a>
     <p class="Contact" id="C"><hr class="Chr" id="Chr"></p>
 </body>
 
@@ -21,7 +24,6 @@
 <style>
 body{
     background-color: rgb(20, 20, 90);
-    overflow: hidden;
 }
 .Title{
     width: 98%;
@@ -31,19 +33,16 @@ body{
     color: white;
     transform: translate(0.4%);
     top: 2%;
-    border: solid;
-    border-color: white;
-    border-width: 5px;
     text-indent: 15px;
     
 }
-.linebreak{
-    height: 10px;
+.lbreak{
+    height: 3px;
     width: 98%;
     background-color: white;
-    position: fixed;
+    position: absolute;
     transform: translate(0.57%);
-    top: 9%;
+    top: 7%;
    border-radius: 5px;
 }
 .Contact{
@@ -68,7 +67,7 @@ body{
 }
 .button{
     font-size: 20px;
-    background-color: rgb(179, 177, 177);
+    background-color: rgb(107, 105, 105);
     color: white;
     position: absolute;
     top: 3.2%;
@@ -77,4 +76,44 @@ body{
     border-width: 2px;
     border-radius: 25px;
 }
+.button:hover{
+    background-color: rgb(214, 160, 12);
+    box-shadow: 0 0 20px 0 gold;
+
+}
+.m{
+    color: white;
+    width: 98%;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    position: absolute;
+    bottom: 2%;
+    transform: translate(0.57%);
+}
+.buttonA:hover{
+    background-color: rgb(214, 160, 12);
+    box-shadow: 0 0 20px 0 gold;
+}
+.buttonA{
+    font-size: 20px;
+    background-color: rgb(107, 105, 105);
+    color: white;
+    position: absolute;
+    top: 3%;
+    right: 9%;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 25px;
+    height: 3%;
+    text-decoration: none;
+    width: 6%;
+    text-align: center;
+}
+#Aboutme{
+    position: absolute;
+    bottom: -10%;
+}
 </style>
+
