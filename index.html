@@ -3,7 +3,7 @@
 </head>
 <body>
     <hr class="linebreak"></hr>
-    <button onclick="Contact()"><img src="A.png"></img>Contact</button>
+    <button class="button" onclick="Contact()"><img src="A.png"></img>Contact</button>
     <p class="Contact" id="C"><hr class="Chr" id="Chr"></p>
 </body>
 
@@ -21,6 +21,7 @@
 <style>
 body{
     background-color: rgb(20, 20, 90);
+    overflow: hidden;
 }
 .Title{
     width: 98%;
@@ -55,6 +56,7 @@ body{
     text-align: center;
     font-size: 37px;
     border-radius: 10px;
+
 }
 .Chr{
     width: 19.89%;
@@ -62,5 +64,17 @@ body{
     position: absolute;
     bottom: 78%;
     right: 1%;
+
+}
+.button{
+    font-size: 20px;
+    background-color: rgb(179, 177, 177);
+    color: white;
+    position: absolute;
+    top: 3.2%;
+    right: 3%;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 25px;
 }
 </style>
